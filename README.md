@@ -32,7 +32,7 @@ $ learnpack start
 
 ## Instructions
 
-Create the HTML and CSS3 needed to replicate [this exact same picture](https://raw.githubusercontent.com/breatheco-de/exercise-postcard/main/.learn/assets/preview.png).
+Create the HTML and CSS3 needed to replicate [this exact same picture](https://rawrawraw.githubusercontent.com/breatheco-de/exercise-postcard/main/.learn/assets/preview.png).
 
 ![postcard preview](https://raw.githubusercontent.com/breatheco-de/exercise-postcard/main/.learn/assets/preview.png)
 
