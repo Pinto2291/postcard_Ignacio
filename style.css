@@ -31,11 +31,93 @@ input, button, textarea, select {
   font: inherit;
 }
 
-.main-body {
-    background-color: #1f0202;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-}
+body {
+            background-color: #1b1b1b; /* Dark background */
+            font-family: 'Handlee', cursive; /* Handwritten font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Center vertically */
+            margin: 0;
+        }
 
+        .postcard {
+            background-color: white;
+            width: 600px; /* Fixed width like a real postcard */
+            height: auto;
+            padding: 20px;
+            /* Optional: adds a slight shadow to make it pop off the dark bg */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+        }
+
+        /* Header Section */
+        .postcard-header {
+            display: flex;
+            justify-content: space-between; /* Pushes text to left, logo to right */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .postcard-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 400; /* Handwritten fonts often look better regular weight */
+        }
+
+        .postcard-header img {
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Body Section */
+        .postcard-body {
+            display: flex; /* Creates the two columns */
+            gap: 20px;
+        }
+
+        .body-left, .body-right {
+            flex: 1; /* Both sides take up equal space */
+            padding: 10px;
+        }
+
+        .body-left p {
+            margin-top: 0;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .body-right input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc; /* Only the bottom line */
+            margin-bottom: 20px;
+            padding: 5px 0;
+            font-family: inherit; /* Inherit the handwritten font */
+            font-size: 1.1rem;
+            color: #555;
+            outline: none;
+        }
+        
+        .body-right input::placeholder {
+             color: #888;
+        }
+
+        /* Footer Section */
+        .postcard-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .postcard-footer button {
+            background-color: #aeb6bf; /* Grey background */
+            border: none;
+            padding: 10px 25px;
+            font-family: inherit;
+            font-size: 1.1rem;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .postcard-footer button:hover {
+            background-color: #8a96a3; /* Slight darken on hover */
+        }
